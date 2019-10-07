@@ -1,14 +1,15 @@
-# Simple TODO app
+# REST Tutorial
 
 ## Prerequisites
 
-- python 3.6.8
-- django 2.2.1
+- Python 3.6.8
+- Django 2.2.1
+- Django Rest Framework 3.9.4
 
- ## Run app
- 
- ```sh
- python3 manage.py runserver
- ```
- 
- Go to `localhost:8000`
+## Run
+
+```sh
+python3 manage.py runserver
+```
+
+Go to [http://127.0.0.1:8000](http://127.0.0.1:8000/)
