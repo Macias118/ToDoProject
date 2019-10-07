@@ -1,4 +1,4 @@
-# REST Tutorial
+# Simple TODO app
 
 ## Prerequisites
 
