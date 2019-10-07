@@ -1,0 +1,29 @@
+{% if not context.tasks %}
+    <p><strong>Nothing to do...</strong></p>
+{% else %}
+    <ul>
+        {% for task in context.tasks %}
+            <li>{{ task.id }}. {{ task }}</li><br>
+            <p>{{ task.content }}</p>
+            <form action="{% url 'todoapp:deleteItem' task.id %}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="Delete">
+            </form>
+        {% endfor %}
+    </ul>
+{% endif %}
+<br>
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

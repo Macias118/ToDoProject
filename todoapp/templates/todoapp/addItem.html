@@ -1,0 +1,10 @@
+<h2><i>Create task</i></h2>
+<form action="{% url 'todoapp:addItem' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="AddNewform">
+</form>
+
+{% if not item_added %}
+    <h3>Task added!</h3>
+{% endif %}

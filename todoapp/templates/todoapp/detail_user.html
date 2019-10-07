@@ -1,0 +1,10 @@
+{{ user_name }}
+{% if not filtered_tasks %}
+    <p>No tasks...</p>
+{% else %}
+    <ul>
+        {% for task in filtered_tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
