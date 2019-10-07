@@ -4,7 +4,6 @@
 
 - Python 3.6.8
 - Django 2.2.1
-- Django Rest Framework 3.9.4
 
 ## Run
 
